@@ -3,3 +3,5 @@ mountpoints:
     url: "https://author-p110337-e1077223.adobeaemcloud.com/bin/franklin.delivery/proteendas/aem-tutorial/main"
     type: "markup"
     suffix: ".html"
+    credentials: shared
+    preview: false
