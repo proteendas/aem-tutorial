@@ -1,0 +1,12 @@
+serviceURL: https://author-p110337-e1077223.adobeaemcloud.com
+preview: true
+isLive: true
+repo:
+  owner: proteendas
+  name: aem-tutorial
+  branch: main
+mountpoints:
+  /:
+    url: https://author-p110337-e1077223.adobeaemcloud.com/bin/franklin.delivery/proteendas/aem-tutorial/main
+    type: markup
+    suffix: .html
