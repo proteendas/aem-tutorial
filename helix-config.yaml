@@ -1,0 +1,13 @@
+hosting:
+  pages:
+    enable: true
+    url: https://main--aem-tutorial--proteendas.hlx.page
+
+definitions:
+  delivery:
+    origin: https://author-p110337-e1077223.adobeaemcloud.com
+    path: /bin/franklin.delivery/proteendas/aem-tutorial/main
+    suffix: .html
+
+preview:
+  host: preview-p110337-e1077223.adobeaemcloud.com
