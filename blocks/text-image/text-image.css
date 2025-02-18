@@ -1,17 +1,13 @@
 .text-image-container {
   max-width: unset;
-  padding: 0;
+  padding: 60px 0;
   background-color: #2e2d2c;
 }
 
 .text-image-wrapper {
   margin-left: 80px;
   margin-right: 80px;
-}
-
-.text-image {
   position: relative;
-  padding: 60px 0;
   min-height: fit-content;
   display: flex;
   flex-direction: row;
