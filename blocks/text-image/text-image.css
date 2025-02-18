@@ -18,9 +18,14 @@
   color: #fff;
 }
 
-.image-container img {
+.image-container {
   width: auto;
   height: 469px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
   border-bottom-left-radius: 80px;
   border-top-right-radius: 80px;
 }
