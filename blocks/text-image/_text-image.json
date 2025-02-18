@@ -49,53 +49,14 @@
           "valueType": "string"
         },
         {
-          "component": "group",
+          "component": "reference",
+          "valueType": "string",
           "name": "button",
           "label": "Button",
-          "fields": [
-            {
-              "component": "text",
-              "valueType": "string",
-              "name": "buttonText",
-              "label": "Button Text",
-              "value": ""
-            },
-            {
-              "component": "path",
-              "valueType": "string",
-              "name": "buttonLink",
-              "label": "Button Link",
-              "value": ""
-            },
-            {
-              "component": "select",
-              "valueType": "string",
-              "name": "buttonVariant",
-              "label": "Button Variant",
-              "value": "primary",
-              "options": [
-                {
-                  "value": "primary",
-                  "label": "Primary"
-                },
-                {
-                  "value": "secondary",
-                  "label": "Secondary"
-                },
-                {
-                  "value": "tertiary",
-                  "label": "Tertiary"
-                }
-              ]
-            },
-            {
-              "component": "checkbox",
-              "valueType": "boolean",
-              "name": "buttonOpenNewWindow",
-              "label": "Open in New Window",
-              "value": false
-            }
-          ]
+          "multi": false,
+          "properties": {
+            "resourceType": "core/franklin/components/button/v1/button"
+          }
         }
       ]
     }
