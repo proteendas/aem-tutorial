@@ -226,6 +226,7 @@
         "component": "container",
         "name": "buttonContainer",
         "label": "Button",
+        "fields": [],
         "allowedComponents": [
           "core/wcm/components/button/v1/button"
         ]
