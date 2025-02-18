@@ -223,12 +223,12 @@
         "valueType": "string"
       },
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "cta",
+        "component": "container",
+        "name": "buttonContainer",
         "label": "Button",
-        "resourceType": "core/wcm/components/button/v1/button",
-        "rootPath": "/content"
+        "allowedComponents": [
+          "core/wcm/components/button/v1/button"
+        ]
       }
     ]
   }
