@@ -17,17 +17,12 @@
   flex-direction: row;
 }
 
-.text-image h4 {
+.text-content {
   margin-left: 75px;
   color: #fff;
 }
 
-.text-image p {
-  margin-left: 75px;
-  color: #fff;
-}
-
-.text-image img {
+.image-container img {
   width: 100%;
   height: 100%;
   border-bottom-left-radius: 80px;
