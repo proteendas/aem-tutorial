@@ -18,9 +18,16 @@
   color: #fff;
 }
 
+.text-content h4 {
+  font-size: 40px;
+}
+
+.text-content p {
+  font-size: 18px;
+}
+
 .image-container {
-  width: fit-content;
-  height: 469px;
+  width: 150%;
 }
 
 .image-container img {
