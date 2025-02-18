@@ -54,7 +54,7 @@
           "valueType": "string"
         },
         {
-          "component": "references",
+          "component": "reference",
           "name": "button",
           "label": "Button",
           "multi": false,
