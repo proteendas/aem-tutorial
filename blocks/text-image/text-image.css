@@ -19,7 +19,7 @@
 }
 
 .image-container {
-  width: auto;
+  width: fit-content;
   height: 469px;
 }
 
