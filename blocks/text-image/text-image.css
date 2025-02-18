@@ -10,7 +10,7 @@
   position: relative;
   min-height: fit-content;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .text-content {
@@ -35,4 +35,10 @@
   height: 100%;
   border-bottom-left-radius: 80px;
   border-top-right-radius: 80px;
+}
+
+@media (width >= 900px) {
+  .text-image-wrapper {
+    flex-direction: row;
+  }
 }
