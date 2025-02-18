@@ -2,6 +2,8 @@
   max-width: unset;
   padding: 0;
   color: #2e2d2c;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .text-image {
@@ -10,7 +12,7 @@
   min-height: fit-content;
 }
 
-.text-image h1 {
+.text-image h4 {
   margin-left: 75px;
   color: #fff;
 }
@@ -20,7 +22,9 @@
   color: #fff;
 }
 
-.text-image picture {
+.text-image img {
+  width: 100%;
+  height: 100%;
   border-bottom-left-radius: 80px;
   border-top-right-radius: 80px;
 }
