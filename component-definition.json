@@ -167,6 +167,11 @@
                 "template": {
                   "name": "Text Image",
                   "model": "text-image"
+                },
+                "components": {
+                  "button": {
+                    "resourceType": "core/franklin/components/button/v1/button"
+                  }
                 }
               }
             }
