@@ -9,12 +9,22 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "name": "Text Image",
-              "model": "text-image"
-            },
-            "components": {
-              "button": {
-                "resourceType": "core/franklin/components/button/v1/button"
-              }
+              "filter": "text-image"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Button",
+      "id": "button",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Button",
+              "model": "button"
             }
           }
         }
@@ -52,18 +62,55 @@
           "value": "",
           "label": "Description",
           "valueType": "string"
+        }
+      ]
+    },
+    {
+      "id": "button",
+      "fields": [
+        {
+          "component": "aem-content",
+          "name": "link",
+          "label": "Link"
         },
         {
-          "component": "reference",
-          "name": "button",
-          "label": "Button",
-          "multi": false,
-          "properties": {
-            "resourceType": "core/franklin/components/button/v1/button"
-          }
+          "component": "text",
+          "name": "linkText",
+          "label": "Text"
+        },
+        {
+          "component": "text",
+          "name": "linkTitle",
+          "label": "Title"
+        },
+        {
+          "component": "select",
+          "name": "linkType",
+          "label": "Type",
+          "options": [
+            {
+              "name": "default",
+              "value": ""
+            },
+            {
+              "name": "primary",
+              "value": "primary"
+            },
+            {
+              "name": "secondary",
+              "value": "secondary"
+            }
+          ]
         }
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "text-image",
+      "components": [
+        "button"
+      ]
+    }
+  ]
 }
