@@ -40,9 +40,11 @@
   .text-image-wrapper {
     flex-direction: row;
   }
+
   .image-container {
     width: 150%;
   }
+  
   .text-content {
     margin-left: 75px;
   }
