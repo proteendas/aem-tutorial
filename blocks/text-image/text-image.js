@@ -9,6 +9,12 @@ export default function decorate() {
 
     if (imageDiv) {
       imageDiv.classList.add('image-container');
+
+      // Add 'text-image-container' to the parent div of the 'image-container'
+      const parentDiv = imageDiv.parentElement;
+      if (parentDiv) {
+        parentDiv.classList.add('text-image-container');
+      }
     }
 
     // Create a new div with the class 'text-container'
