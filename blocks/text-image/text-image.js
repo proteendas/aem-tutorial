@@ -1,3 +1,5 @@
+import { createOptimizedPicture } from '../../scripts/aem.js';
+
 export default function decorate() {
   // Select all elements with the class 'text-image-wrapper'
   const textImageWrappers = document.querySelectorAll('.text-image-wrapper');
@@ -8,6 +10,17 @@ export default function decorate() {
     const imageDiv = pictureElement?.closest('div');
 
     if (imageDiv) {
+      // Use createOptimizedPicture to load the picture
+      const imgElement = imageDiv.querySelector('img');
+      if (imgElement) {
+        console.log(imgElement);
+        const src = imgElement.getAttribute('src');
+        const alt = imgElement.getAttribute('alt');
+        const optimizedPicture = createOptimizedPicture(src, alt, false, []);
+        imageDiv.innerHTML = ''; // Clear existing content
+        imageDiv.appendChild(optimizedPicture);
+      }
+
       imageDiv.classList.add('image-container');
 
       // Add 'text-image-div-container' to the parent div of the 'image-container'
