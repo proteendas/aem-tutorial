@@ -13,7 +13,7 @@
 
 .text-image-div-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .text-image-div-container .text-container {
@@ -45,7 +45,7 @@
   }
 
   .text-image-div-container .image-container {
-    width: 65%;
+    width: 150%;
   }
   
   .text-image-div-container .text-container {
