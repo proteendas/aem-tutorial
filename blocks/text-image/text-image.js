@@ -15,7 +15,7 @@ export default function decorate() {
     const textContainer = document.createElement('div');
     textContainer.classList.add('text-container');
 
-    // Select all the divs that need to be placed inside the 'text-container' within the current wrapper
+    // Select all the divs that need to be placed inside the 'text-container'
     const textDivs = textImageWrapper.querySelectorAll('div[data-aue-prop="text"], div[data-aue-prop="description"], div[data-aue-model="button"]');
 
     // Append each selected div to the new 'text-container'
