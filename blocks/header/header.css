@@ -34,9 +34,9 @@ header nav[aria-expanded='true'] {
   header nav {
     display: flex;
     justify-content: space-between;
-    gap: 0 32px;
+    gap: 0 56px;
     max-width: 1264px;
-    padding: 0 32px;
+    padding: 0 56px;
   }
 
   header nav[aria-expanded='true'] {
