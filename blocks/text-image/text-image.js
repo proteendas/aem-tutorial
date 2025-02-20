@@ -1,4 +1,5 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
+import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate() {
   // Select all elements with the class 'text-image-wrapper'
@@ -6,16 +7,15 @@ export default function decorate() {
 
   textImageWrappers.forEach((textImageWrapper) => {
     // Select the first div containing a picture element within the current wrapper
-    const pictureElement = textImageWrapper.querySelector('div > picture');
-    const imageDiv = pictureElement?.closest('div');
+    const img = textImageWrapper.querySelector('div > picture');
+    const imageDiv = img?.closest('div');
 
-    if (imageDiv) {
+    if (img) {
       // Use createOptimizedPicture to load the picture
-      const imgElement = imageDiv.querySelector('img');
-      if (imgElement) {
-        const optimizedPicture = createOptimizedPicture(imgElement.src, imgElement.alt, false, []);
-        imageDiv.innerHTML = ''; // Clear existing content
-        imageDiv.appendChild(optimizedPicture);
+      if (img) {
+        const optimizedPicture = createOptimizedPicture(img.src, img.alt, false, []);
+        moveInstrumentation(img, optimizedPicture.querySelector('img'));
+        img.closest('picture').replaceWith(optimizedPicture);
       }
 
       imageDiv.classList.add('image-container');
