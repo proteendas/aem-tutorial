@@ -13,23 +13,23 @@
   flex-direction: column;
 }
 
-.text-content {
+.text-image .text-container {
   color: #fff;
 }
 
-.text-content h4 {
+.text-image .text-container h4 {
   font-size: 40px;
 }
 
-.text-content p {
+.text-image .text-container p {
   font-size: 18px;
 }
 
-.image-container {
+.text-image .image-container {
   width: 100%;
 }
 
-.image-container img {
+.text-image .image-container img {
   width: 100%;
   height: 100%;
   border-bottom-left-radius: 80px;
@@ -41,11 +41,11 @@
     flex-direction: row;
   }
 
-  .image-container {
+  .text-image .image-container {
     width: 150%;
   }
   
-  .text-content {
+  .text-image .text-container {
     margin-left: 75px;
   }
 }
