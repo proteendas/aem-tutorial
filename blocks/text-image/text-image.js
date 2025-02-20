@@ -13,10 +13,7 @@ export default function decorate() {
       // Use createOptimizedPicture to load the picture
       const imgElement = imageDiv.querySelector('img');
       if (imgElement) {
-        console.log(imgElement);
-        const src = imgElement.getAttribute('src');
-        const alt = imgElement.getAttribute('alt');
-        const optimizedPicture = createOptimizedPicture(src, alt, false, []);
+        const optimizedPicture = createOptimizedPicture(imgElement.src, imgElement.alt, false, []);
         imageDiv.innerHTML = ''; // Clear existing content
         imageDiv.appendChild(optimizedPicture);
       }
