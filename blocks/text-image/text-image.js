@@ -16,7 +16,7 @@ export default function decorate() {
     const textDivs = textImageWrapper.querySelectorAll('div[data-aue-prop="text"], div[data-aue-prop="description"], div[data-aue-model="button"]');
 
     // Append each selected div to the new 'text-container'
-    textDivs.forEach(div => {
+    textDivs.forEach((div) => {
       textContainer.appendChild(div);
     });
 
