@@ -1,9 +1,12 @@
 export default function decorate() {
-  const textImageWrapper = document.querySelector('.text-image-wrapper');
+  // Select all elements with the class 'text-image-wrapper'
+  const textImageWrappers = document.querySelectorAll('.text-image-wrapper');
 
-  if (textImageWrapper) {
-    // Select the first div containing a picture element and add the class 'image-container'
-    const imageDiv = textImageWrapper.querySelector('div > picture')?.closest('div');
+  textImageWrappers.forEach((textImageWrapper) => {
+    // Select the first div containing a picture element within the current wrapper
+    const pictureElement = textImageWrapper.querySelector('div > picture');
+    const imageDiv = pictureElement?.closest('div');
+
     if (imageDiv) {
       imageDiv.classList.add('image-container');
     }
@@ -12,7 +15,7 @@ export default function decorate() {
     const textContainer = document.createElement('div');
     textContainer.classList.add('text-container');
 
-    // Select all the divs that need to be placed inside the 'text-container'
+    // Select all the divs that need to be placed inside the 'text-container' within the current wrapper
     const textDivs = textImageWrapper.querySelectorAll('div[data-aue-prop="text"], div[data-aue-prop="description"], div[data-aue-model="button"]');
 
     // Append each selected div to the new 'text-container'
@@ -20,7 +23,7 @@ export default function decorate() {
       textContainer.appendChild(div);
     });
 
-    // Remove any existing empty divs within the textImageWrapper
+    // Remove any existing empty divs within the current textImageWrapper
     textImageWrapper.querySelectorAll('div').forEach((div) => {
       if (div.childNodes.length === 0) {
         div.remove();
@@ -33,5 +36,5 @@ export default function decorate() {
     } else {
       textImageWrapper.appendChild(textContainer);
     }
-  }
+  });
 }
