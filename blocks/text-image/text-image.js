@@ -3,7 +3,6 @@ export default function decorate() {
   const imageDiv = textImageWrapper.querySelector('picture');
   const headingDiv = textImageWrapper.querySelector('h4');
   const descriptionDiv = textImageWrapper.querySelector('p');
-  const buttonDiv = textImageWrapper.getElementsByClassName('button-container');
   const textContainer = document.createElement('div');
   textContainer.classList.add('text-content');
   if (headingDiv) {
@@ -11,9 +10,6 @@ export default function decorate() {
   }
   if (descriptionDiv) {
     textContainer.appendChild(descriptionDiv);
-  }
-  if (buttonDiv) {
-    textContainer.appendChild(buttonDiv);
   }
   textImageWrapper.innerHTML = '';
   const newStructure = `
